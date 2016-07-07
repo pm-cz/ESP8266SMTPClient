@@ -1,0 +1,50 @@
+#######################################
+# Syntax Coloring Map For Ultrasound
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+SMTPClient	KEYWORD1
+SSDP	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+end KEYWORD2
+connected KEYWORD2
+setAuthorization	KEYWORD2
+setTimeout	KEYWORD2
+setMailer	KEYWORD2
+sendMessage	KEYWORD2
+addHeader	KEYWORD2
+addRecipient	KEYWORD2
+clearHeaders	KEYWORD2
+clearRecipients	KEYWORD2
+disconnect	KEYWORD2
+getStreamPtr	KEYWORD2
+getErrorMessage	KEYWORD2
+errorToString	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+SMTPCLIENT_DEFAULT_TCP_TIMEOUT	LITERAL1
+SMTPC_ERROR_CONNECTION_REFUSED  LITERAL1
+SMTPC_ERROR_SEND_HEADER_FAILED  LITERAL1
+SMTPC_ERROR_SEND_PAYLOAD_FAILED LITERAL1
+SMTPC_ERROR_NOT_CONNECTED       LITERAL1
+SMTPC_ERROR_CONNECTION_LOST     LITERAL1
+SMTPC_ERROR_NO_STREAM           LITERAL1
+SMTPC_ERROR_NO_SMTP_SERVER      LITERAL1
+SMTPC_ERROR_TOO_LESS_RAM        LITERAL1
+SMTPC_ERROR_STREAM_WRITE        LITERAL1
+SMTPC_ERROR_READ_TIMEOUT        LITERAL1
+SMTPC_ERROR_UNAUTHORIZED        LITERAL1
+SMTPC_ERROR_INVALID_SENDER      LITERAL1
+SMTPC_ERROR_INVALID_RECIPIENT   LITERAL1
+SMTPC_ERROR_INVALID_ENVELOPE    LITERAL1
+DEBUG_ESP_SMTP_CLIENT		LITERAL1
