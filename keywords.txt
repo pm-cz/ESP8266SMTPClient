@@ -1,17 +1,16 @@
-#######################################
-# Syntax Coloring Map For Ultrasound
-#######################################
+###########################################
+# Syntax Coloring Map For ESP8266SMTPClient
+###########################################
 
-#######################################
+###########################################
 # Datatypes (KEYWORD1)
-#######################################
+###########################################
 
 SMTPClient	KEYWORD1
-SSDP	KEYWORD1
 
-#######################################
+###########################################
 # Methods and Functions (KEYWORD2)
-#######################################
+###########################################
 
 begin	KEYWORD2
 end KEYWORD2
@@ -29,9 +28,9 @@ getStreamPtr	KEYWORD2
 getErrorMessage	KEYWORD2
 errorToString	KEYWORD2
 
-#######################################
+###########################################
 # Constants (LITERAL1)
-#######################################
+###########################################
 SMTPCLIENT_DEFAULT_TCP_TIMEOUT	LITERAL1
 SMTPC_ERROR_CONNECTION_REFUSED  LITERAL1
 SMTPC_ERROR_SEND_HEADER_FAILED  LITERAL1

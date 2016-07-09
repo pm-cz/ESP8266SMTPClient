@@ -1,0 +1,13 @@
+{
+  "name": "ESP8266SMTPClient",
+  "keywords": "wifi, smtp, esp8266",
+  "description": "ESP8266 Arduino SMTP client with autorization, custom message headers",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/pm-cz/ESP8266SMTPClient.git"
+  },
+  "frameworks": "arduino",
+  "platforms": "espressif",
+  "version": "0.6"
+}
