@@ -31,7 +31,6 @@
 #define ESP8266SMTPClient_H_
 
 //#define DEBUG_ESP_SMTP_CLIENT
-//#define DEBUG_ESP_PORT Serial
 
 #ifdef DEBUG_ESP_SMTP_CLIENT
 #ifdef DEBUG_ESP_PORT
@@ -76,7 +75,7 @@ class SMTPClient {
         void setMailer(const char * mailer);
 
         int sendMessage(const char * from, const char * payload, size_t size, const char* to=NULL, const char * subject = NULL);
-        int sendMessage(const char * from, String payload, const char* to=NULL, const char * subject = NULL);
+        int sendMessage(const char * from, String & payload, const char* to=NULL, const char * subject = NULL);
 
         void addHeader(const String& name, const String& value, bool first = false);
         void addRecipient(const String& to);

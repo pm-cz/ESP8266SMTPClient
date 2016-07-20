@@ -152,7 +152,7 @@ void SMTPClient::setTimeout(uint16_t timeout) {
  * @param subject const char *  Message subject (if NULL, will use pre-set header or not send subject at all)
  * @return -1 on connection error, status code when message sending
  */
-int SMTPClient::sendMessage(const char * from, String payload, const char * to, const char * subject)  {
+int SMTPClient::sendMessage(const char * from, String & payload, const char * to, const char * subject)  {
     return sendMessage(from, (char *) payload.c_str(), payload.length(), to, subject);
 }
 
@@ -244,8 +244,8 @@ int SMTPClient::sendMessage(const char * from, const char * payload, size_t size
         if(_tcp->write(&payload[0], size) != size) {
             return returnError(SMTPC_ERROR_SEND_PAYLOAD_FAILED);
         }
-        _returnCode = sendRequest("\r\n.");
     }
+	_returnCode = sendRequest("\r\n.");
     
     /* Reset recepients after sending them */
     clearRecipients();
